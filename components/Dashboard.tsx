@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import type { ImpactOutput, EngineerImpact } from "@/scripts/score-impact";
-import { ThemeToggle } from "./ThemeToggle";
 
 // ─── Types ────────────────────────────────────────────────────────────────
 
@@ -546,7 +545,6 @@ export function Dashboard({ data }: { data: ImpactOutput }) {
               >
                 {data.daysAnalyzed < 80 ? "⚠ Partial" : "✓ Complete"} · {data.totalPRsAnalyzed.toLocaleString()} PRs · {data.daysAnalyzed} of 90 days
               </span>
-              <ThemeToggle />
             </div>
           </div>
           <div className="mt-3 border-b pb-5" style={{ borderColor: "var(--rim)" }}>
