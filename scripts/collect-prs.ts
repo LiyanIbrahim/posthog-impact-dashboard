@@ -412,7 +412,7 @@ async function fetchReviewedBy(
   let after: string | null = null;
 
   do {
-    const data = await graphql<ReviewedByResponse>(REVIEWED_BY_QUERY, { q, after });
+    const data: ReviewedByResponse = await graphql<ReviewedByResponse>(REVIEWED_BY_QUERY, { q, after });
     for (const node of data.search.nodes) {
       if (!node.number || !node.author) continue;
       results.push({
