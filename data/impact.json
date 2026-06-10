@@ -1,0 +1,587 @@
+{
+  "repository": "PostHog/posthog",
+  "generatedAt": "2026-06-10T16:54:32.081Z",
+  "windowStart": "2026-03-12T16:40:11Z",
+  "windowEnd": "2026-04-09T16:40:52Z",
+  "totalPRsAnalyzed": 2219,
+  "totalEngineers": 157,
+  "modelWeights": {
+    "delivery": 0.35,
+    "centrality": 0.25,
+    "reviewLeverage": 0.2,
+    "collaborationReach": 0.1,
+    "consistency": 0.1
+  },
+  "engineers": [
+    {
+      "login": "MattPua",
+      "rank": 1,
+      "compositeScore": 81,
+      "dimensions": {
+        "delivery": {
+          "raw": 75.49999999999999,
+          "norm": 1,
+          "label": "72 impactful PRs merged (4 closed tracked issues)"
+        },
+        "centrality": {
+          "raw": 450.80645161290545,
+          "norm": 1,
+          "label": "Works in high-traffic code areas (frontend/src)"
+        },
+        "reviewLeverage": {
+          "raw": 284,
+          "norm": 0.35192069392812886,
+          "label": "Substantive reviews on 40 PRs (weighted by PR size)"
+        },
+        "collaborationReach": {
+          "raw": 18,
+          "norm": 0.4186046511627907,
+          "label": "Reviewed work from 18 distinct colleagues"
+        },
+        "consistency": {
+          "raw": 5,
+          "norm": 1,
+          "label": "Active in 5 of the weeks in this window"
+        }
+      },
+      "narrative": "Merged 72 impactful PRs, 4 closing tracked issues, primarily in frontend/src, frontend/__snapshots__; reviewed 40 PRs for 18 colleagues.",
+      "topAreas": [
+        "frontend/src",
+        "frontend/__snapshots__",
+        "packages/quill"
+      ],
+      "prCount": 77,
+      "reviewGiven": 40,
+      "notableContributions": [
+        {
+          "title": "feat(alerts): quiet hours for insight alerts",
+          "url": "https://github.com/PostHog/posthog/pull/53264",
+          "closedIssues": 1
+        },
+        {
+          "title": "fix(dashboard-filters): Fixes a overflow issue for filters when many filters are enabled",
+          "url": "https://github.com/PostHog/posthog/pull/52178",
+          "closedIssues": 1
+        },
+        {
+          "title": "fix(MarkdownEditor): defer focus to avoid Safari ProseMirror transaction error",
+          "url": "https://github.com/PostHog/posthog/pull/52740",
+          "closedIssues": 1
+        }
+      ]
+    },
+    {
+      "login": "pauldambra",
+      "rank": 2,
+      "compositeScore": 57,
+      "dimensions": {
+        "delivery": {
+          "raw": 52.39999999999999,
+          "norm": 0.6940397350993378,
+          "label": "48 impactful PRs merged (1 closed tracked issues)"
+        },
+        "centrality": {
+          "raw": 243.76344086021476,
+          "norm": 0.5407274895646955,
+          "label": "Works in high-traffic code areas (frontend/__snapshots__)"
+        },
+        "reviewLeverage": {
+          "raw": 159,
+          "norm": 0.1970260223048327,
+          "label": "Substantive reviews on 42 PRs (weighted by PR size)"
+        },
+        "collaborationReach": {
+          "raw": 23,
+          "norm": 0.5348837209302325,
+          "label": "Reviewed work from 23 distinct colleagues"
+        },
+        "consistency": {
+          "raw": 5,
+          "norm": 1,
+          "label": "Active in 5 of the weeks in this window"
+        }
+      },
+      "narrative": "Merged 48 impactful PRs, 1 closing tracked issues, primarily in frontend/__snapshots__, frontend/src; reviewed 42 PRs for 23 colleagues.",
+      "topAreas": [
+        "frontend/__snapshots__",
+        "frontend/src",
+        "posthog/session_recordings"
+      ],
+      "prCount": 61,
+      "reviewGiven": 42,
+      "notableContributions": [
+        {
+          "title": "fix: remove broken add_latest_means_not_initial from property search",
+          "url": "https://github.com/PostHog/posthog/pull/53386",
+          "closedIssues": 1
+        },
+        {
+          "title": "feat: pinning in TaxonomicFilter",
+          "url": "https://github.com/PostHog/posthog/pull/53340",
+          "closedIssues": 0
+        },
+        {
+          "title": "feat: centralize Fuse.js config via createFuse factory",
+          "url": "https://github.com/PostHog/posthog/pull/53733",
+          "closedIssues": 0
+        }
+      ]
+    },
+    {
+      "login": "thmsobrmlr",
+      "rank": 3,
+      "compositeScore": 57,
+      "dimensions": {
+        "delivery": {
+          "raw": 45.89999999999999,
+          "norm": 0.6079470198675496,
+          "label": "42 impactful PRs merged (0 closed tracked issues)"
+        },
+        "centrality": {
+          "raw": 154.8709677419355,
+          "norm": 0.34354203935599115,
+          "label": "Works in high-traffic code areas (frontend/src)"
+        },
+        "reviewLeverage": {
+          "raw": 495,
+          "norm": 0.6133828996282528,
+          "label": "Substantive reviews on 52 PRs (weighted by PR size)"
+        },
+        "collaborationReach": {
+          "raw": 19,
+          "norm": 0.4418604651162791,
+          "label": "Reviewed work from 19 distinct colleagues"
+        },
+        "consistency": {
+          "raw": 5,
+          "norm": 1,
+          "label": "Active in 5 of the weeks in this window"
+        }
+      },
+      "narrative": "Merged 42 impactful PRs, primarily in frontend/src, posthog/hogql_queries; reviewed 52 PRs for 19 colleagues.",
+      "topAreas": [
+        "frontend/src",
+        "posthog/hogql_queries",
+        "frontend/__snapshots__"
+      ],
+      "prCount": 55,
+      "reviewGiven": 52,
+      "notableContributions": [
+        {
+          "title": "feat(lifecycle): add data warehouse support",
+          "url": "https://github.com/PostHog/posthog/pull/50140",
+          "closedIssues": 0
+        },
+        {
+          "title": "feat(retention): add support for extended person properties",
+          "url": "https://github.com/PostHog/posthog/pull/52089",
+          "closedIssues": 0
+        },
+        {
+          "title": "fix(dashboards): add missing container width mock",
+          "url": "https://github.com/PostHog/posthog/pull/51204",
+          "closedIssues": 0
+        }
+      ]
+    },
+    {
+      "login": "sampennington",
+      "rank": 4,
+      "compositeScore": 56,
+      "dimensions": {
+        "delivery": {
+          "raw": 45.79999999999999,
+          "norm": 0.6066225165562914,
+          "label": "38 impactful PRs merged (3 closed tracked issues)"
+        },
+        "centrality": {
+          "raw": 177.54838709677406,
+          "norm": 0.3938461538461516,
+          "label": "Works in high-traffic code areas (frontend/src)"
+        },
+        "reviewLeverage": {
+          "raw": 451,
+          "norm": 0.5588599752168525,
+          "label": "Substantive reviews on 62 PRs (weighted by PR size)"
+        },
+        "collaborationReach": {
+          "raw": 14,
+          "norm": 0.32558139534883723,
+          "label": "Reviewed work from 14 distinct colleagues"
+        },
+        "consistency": {
+          "raw": 5,
+          "norm": 1,
+          "label": "Active in 5 of the weeks in this window"
+        }
+      },
+      "narrative": "Merged 38 impactful PRs, 3 closing tracked issues, primarily in frontend/src, frontend/__snapshots__; reviewed 62 PRs for 14 colleagues.",
+      "topAreas": [
+        "frontend/src",
+        "frontend/__snapshots__",
+        "posthog/hogql_queries"
+      ],
+      "prCount": 59,
+      "reviewGiven": 62,
+      "notableContributions": [
+        {
+          "title": "feat(insights): Adds breakdown funnels by cohort",
+          "url": "https://github.com/PostHog/posthog/pull/50948",
+          "closedIssues": 1
+        },
+        {
+          "title": "fix(insights): Compare to previous showing wrong date",
+          "url": "https://github.com/PostHog/posthog/pull/51301",
+          "closedIssues": 1
+        },
+        {
+          "title": "fix(insights): fix bar chart click opening modal for wrong breakdown",
+          "url": "https://github.com/PostHog/posthog/pull/53660",
+          "closedIssues": 1
+        }
+      ]
+    },
+    {
+      "login": "rafaeelaudibert",
+      "rank": 5,
+      "compositeScore": 56,
+      "dimensions": {
+        "delivery": {
+          "raw": 28,
+          "norm": 0.37086092715231794,
+          "label": "28 impactful PRs merged (0 closed tracked issues)"
+        },
+        "centrality": {
+          "raw": 172.23655913978453,
+          "norm": 0.38206320810971695,
+          "label": "Works in high-traffic code areas (services/mcp)"
+        },
+        "reviewLeverage": {
+          "raw": 693,
+          "norm": 0.8587360594795539,
+          "label": "Substantive reviews on 89 PRs (weighted by PR size)"
+        },
+        "collaborationReach": {
+          "raw": 26,
+          "norm": 0.6046511627906976,
+          "label": "Reviewed work from 26 distinct colleagues"
+        },
+        "consistency": {
+          "raw": 5,
+          "norm": 1,
+          "label": "Active in 5 of the weeks in this window"
+        }
+      },
+      "narrative": "Merged 28 impactful PRs, primarily in services/mcp, frontend/src; reviewed 89 PRs for 26 colleagues.",
+      "topAreas": [
+        "services/mcp",
+        "frontend/src",
+        "frontend/__snapshots__"
+      ],
+      "prCount": 28,
+      "reviewGiven": 89,
+      "notableContributions": [
+        {
+          "title": "refactor: Multitude of simplifications for MCP Apps",
+          "url": "https://github.com/PostHog/posthog/pull/51379",
+          "closedIssues": 0
+        },
+        {
+          "title": "feat: Migrate MCP UI apps from self-contained HTML to Workers Static Assets",
+          "url": "https://github.com/PostHog/posthog/pull/51238",
+          "closedIssues": 0
+        },
+        {
+          "title": "feat: Connect Stripe via OAuth in data warehouse",
+          "url": "https://github.com/PostHog/posthog/pull/49572",
+          "closedIssues": 0
+        }
+      ]
+    },
+    {
+      "login": "gantoine",
+      "rank": 6,
+      "compositeScore": 54,
+      "dimensions": {
+        "delivery": {
+          "raw": 25.300000000000004,
+          "norm": 0.3350993377483445,
+          "label": "22 impactful PRs merged (0 closed tracked issues)"
+        },
+        "centrality": {
+          "raw": 42.075268817204275,
+          "norm": 0.09333333333333281,
+          "label": "Works in high-traffic code areas (frontend/__snapshots__)"
+        },
+        "reviewLeverage": {
+          "raw": 807,
+          "norm": 1,
+          "label": "Substantive reviews on 117 PRs (weighted by PR size)"
+        },
+        "collaborationReach": {
+          "raw": 43,
+          "norm": 1,
+          "label": "Reviewed work from 43 distinct colleagues"
+        },
+        "consistency": {
+          "raw": 5,
+          "norm": 1,
+          "label": "Active in 5 of the weeks in this window"
+        }
+      },
+      "narrative": "Merged 22 impactful PRs, primarily in frontend/__snapshots__, frontend/src; reviewed 117 PRs for 43 colleagues.",
+      "topAreas": [
+        "frontend/__snapshots__",
+        "frontend/src",
+        "tools/phrocs"
+      ],
+      "prCount": 33,
+      "reviewGiven": 117,
+      "notableContributions": [
+        {
+          "title": "feat(phrocs): Add interactive dev:setup mode",
+          "url": "https://github.com/PostHog/posthog/pull/53087",
+          "closedIssues": 0
+        },
+        {
+          "title": "feat(devex): Phrocs MCP server",
+          "url": "https://github.com/PostHog/posthog/pull/50707",
+          "closedIssues": 0
+        },
+        {
+          "title": "feat(hogli): Add `hogli test <file_path>` auto-detecting test runner",
+          "url": "https://github.com/PostHog/posthog/pull/53125",
+          "closedIssues": 0
+        }
+      ]
+    },
+    {
+      "login": "mariusandra",
+      "rank": 7,
+      "compositeScore": 54,
+      "dimensions": {
+        "delivery": {
+          "raw": 35,
+          "norm": 0.46357615894039744,
+          "label": "35 impactful PRs merged (0 closed tracked issues)"
+        },
+        "centrality": {
+          "raw": 247.36559139784978,
+          "norm": 0.5487179487179468,
+          "label": "Works in high-traffic code areas (frontend/src)"
+        },
+        "reviewLeverage": {
+          "raw": 505,
+          "norm": 0.6257744733581165,
+          "label": "Substantive reviews on 36 PRs (weighted by PR size)"
+        },
+        "collaborationReach": {
+          "raw": 14,
+          "norm": 0.32558139534883723,
+          "label": "Reviewed work from 14 distinct colleagues"
+        },
+        "consistency": {
+          "raw": 4,
+          "norm": 0.8,
+          "label": "Active in 4 of the weeks in this window"
+        }
+      },
+      "narrative": "Merged 35 impactful PRs, primarily in frontend/src, posthog/hogql; reviewed 36 PRs for 14 colleagues.",
+      "topAreas": [
+        "frontend/src",
+        "posthog/hogql",
+        "products/data_warehouse"
+      ],
+      "prCount": 35,
+      "reviewGiven": 36,
+      "notableContributions": [
+        {
+          "title": "feat(devex): query kind to url",
+          "url": "https://github.com/PostHog/posthog/pull/47110",
+          "closedIssues": 0
+        },
+        {
+          "title": "feat(hogql): get duckdb functions from connection",
+          "url": "https://github.com/PostHog/posthog/pull/51941",
+          "closedIssues": 0
+        },
+        {
+          "title": "feat(hogql): \"within group\" support",
+          "url": "https://github.com/PostHog/posthog/pull/51660",
+          "closedIssues": 0
+        }
+      ]
+    },
+    {
+      "login": "skoob13",
+      "rank": 8,
+      "compositeScore": 52,
+      "dimensions": {
+        "delivery": {
+          "raw": 45.999999999999986,
+          "norm": 0.6092715231788078,
+          "label": "43 impactful PRs merged (0 closed tracked issues)"
+        },
+        "centrality": {
+          "raw": 171.73118279569843,
+          "norm": 0.38094215861657427,
+          "label": "Works in high-traffic code areas (services/mcp)"
+        },
+        "reviewLeverage": {
+          "raw": 393,
+          "norm": 0.48698884758364314,
+          "label": "Substantive reviews on 38 PRs (weighted by PR size)"
+        },
+        "collaborationReach": {
+          "raw": 14,
+          "norm": 0.32558139534883723,
+          "label": "Reviewed work from 14 distinct colleagues"
+        },
+        "consistency": {
+          "raw": 4,
+          "norm": 0.8,
+          "label": "Active in 4 of the weeks in this window"
+        }
+      },
+      "narrative": "Merged 43 impactful PRs, primarily in services/mcp, ee/hogai; reviewed 38 PRs for 14 colleagues.",
+      "topAreas": [
+        "services/mcp",
+        "ee/hogai",
+        "frontend/src"
+      ],
+      "prCount": 53,
+      "reviewGiven": 38,
+      "notableContributions": [
+        {
+          "title": "fix(phai): fix vertical alignment in side panel",
+          "url": "https://github.com/PostHog/posthog/pull/52864",
+          "closedIssues": 0
+        },
+        {
+          "title": "feat(llma): explore traces skill",
+          "url": "https://github.com/PostHog/posthog/pull/53095",
+          "closedIssues": 0
+        },
+        {
+          "title": "feat(mcp): add query wrapper codegen from schema.json",
+          "url": "https://github.com/PostHog/posthog/pull/51825",
+          "closedIssues": 0
+        }
+      ]
+    },
+    {
+      "login": "andrewm4894",
+      "rank": 9,
+      "compositeScore": 51,
+      "dimensions": {
+        "delivery": {
+          "raw": 47.3,
+          "norm": 0.6264900662251657,
+          "label": "45 impactful PRs merged (1 closed tracked issues)"
+        },
+        "centrality": {
+          "raw": 185.77419354838617,
+          "norm": 0.4120930232558099,
+          "label": "Works in high-traffic code areas (services/mcp)"
+        },
+        "reviewLeverage": {
+          "raw": 263,
+          "norm": 0.32589838909541513,
+          "label": "Substantive reviews on 35 PRs (weighted by PR size)"
+        },
+        "collaborationReach": {
+          "raw": 17,
+          "norm": 0.3953488372093023,
+          "label": "Reviewed work from 17 distinct colleagues"
+        },
+        "consistency": {
+          "raw": 4,
+          "norm": 0.8,
+          "label": "Active in 4 of the weeks in this window"
+        }
+      },
+      "narrative": "Merged 45 impactful PRs, 1 closing tracked issues, primarily in services/mcp, products/llm_analytics; reviewed 35 PRs for 17 colleagues.",
+      "topAreas": [
+        "services/mcp",
+        "products/llm_analytics",
+        "posthog/tasks"
+      ],
+      "prCount": 51,
+      "reviewGiven": 35,
+      "notableContributions": [
+        {
+          "title": "fix(llma): normalize nested token objects instead of dropping AI events",
+          "url": "https://github.com/PostHog/posthog/pull/52891",
+          "closedIssues": 1
+        },
+        {
+          "title": "feat(alerts): 1/4 add anomaly detection scaffolding with threshold and zscore detectors",
+          "url": "https://github.com/PostHog/posthog/pull/50073",
+          "closedIssues": 0
+        },
+        {
+          "title": "feat(alerts): 2/4 add additional anomaly detection detectors",
+          "url": "https://github.com/PostHog/posthog/pull/46561",
+          "closedIssues": 0
+        }
+      ]
+    },
+    {
+      "login": "webjunkie",
+      "rank": 10,
+      "compositeScore": 47,
+      "dimensions": {
+        "delivery": {
+          "raw": 43.199999999999996,
+          "norm": 0.5721854304635762,
+          "label": "37 impactful PRs merged (1 closed tracked issues)"
+        },
+        "centrality": {
+          "raw": 52.82795698924743,
+          "norm": 0.11718545020870572,
+          "label": "Works in high-traffic code areas (products/visual_review)"
+        },
+        "reviewLeverage": {
+          "raw": 345,
+          "norm": 0.4275092936802974,
+          "label": "Substantive reviews on 50 PRs (weighted by PR size)"
+        },
+        "collaborationReach": {
+          "raw": 22,
+          "norm": 0.5116279069767442,
+          "label": "Reviewed work from 22 distinct colleagues"
+        },
+        "consistency": {
+          "raw": 5,
+          "norm": 1,
+          "label": "Active in 5 of the weeks in this window"
+        }
+      },
+      "narrative": "Merged 37 impactful PRs, 1 closing tracked issues, primarily in products/visual_review, posthog/api; reviewed 50 PRs for 22 colleagues.",
+      "topAreas": [
+        "products/visual_review",
+        "posthog/api",
+        ".github/workflows"
+      ],
+      "prCount": 56,
+      "reviewGiven": 50,
+      "notableContributions": [
+        {
+          "title": "fix(visual-review): scope UI, config snippet, and clean run nav",
+          "url": "https://github.com/PostHog/posthog/pull/50747",
+          "closedIssues": 1
+        },
+        {
+          "title": "fix(db): denormalize team_id onto visual_review child models",
+          "url": "https://github.com/PostHog/posthog/pull/52048",
+          "closedIssues": 0
+        },
+        {
+          "title": "revert(devcontainer): pin uv image to 0.10.12",
+          "url": "https://github.com/PostHog/posthog/pull/52077",
+          "closedIssues": 0
+        }
+      ]
+    }
+  ]
+}

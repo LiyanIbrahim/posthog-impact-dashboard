@@ -1,0 +1,664 @@
+{
+  "repository": "PostHog/posthog",
+  "generatedAt": "2026-06-10T18:12:09.206Z",
+  "windowStart": "2026-03-12T00:00:00.000Z",
+  "windowEnd": "2026-06-10T18:12:09.206Z",
+  "daysAnalyzed": 90,
+  "totalPRsAnalyzed": 7516,
+  "totalEngineersFound": 177,
+  "enrichedPRCount": 2830,
+  "coverageNote": "Two-phase collection. Full metadata (title, labels, linked issues) for all 7516 merged PRs. File paths enriched for 2830 PRs from 125 active engineers. Review signals captured for all 125 active engineers via reviewed-by queries.",
+  "weights": {
+    "productImpact": 0.4,
+    "orgLeverage": 0.3,
+    "reliabilityQuality": 0.2,
+    "ownershipComplexity": 0.1
+  },
+  "engineers": [
+    {
+      "rank": 1,
+      "login": "pauldambra",
+      "overallScore": 93,
+      "breakdown": {
+        "productImpact": {
+          "score": 100,
+          "rawScore": 809,
+          "formula": "Feature PRs × 3 + linked-issue PRs × 2 + core-product PRs × 1. Title/label signals for all PRs; file-area signals for enriched PRs.",
+          "signals": [
+            "174 feature/product PRs merged",
+            "2 PRs closed tracked GitHub issues",
+            "Primary areas: frontend/src, products/user_interviews, posthog/api"
+          ]
+        },
+        "orgLeverage": {
+          "score": 78,
+          "rawScore": 260.9508794362827,
+          "formula": "Formal reviews × 2 × complexity weight (0.5–1.0 by PR size) + log₂(distinct colleagues + 1) × 2. Sourced from reviewed-by: queries, covering all active engineers.",
+          "signals": [
+            "137 substantive reviews for 51 colleagues"
+          ]
+        },
+        "reliabilityQuality": {
+          "score": 100,
+          "rawScore": 557.5,
+          "formula": "Bug fixes × 2 + tests × 1.5 + perf × 1.5 + refactors × 1 + migrations × 1 + CI × 0.5. A PR can score multiple categories.",
+          "signals": [
+            "135 bug fixes merged",
+            "81 PRs added or improved tests",
+            "32 schema/migration PRs"
+          ]
+        },
+        "ownershipComplexity": {
+          "score": 100,
+          "rawScore": 237.9333333333326,
+          "formula": "Cross-stack PRs × 2 + migration/schema × 1.5 + infra × 1 + file-breadth (0–1, capped at 30). Cross-stack detection requires file enrichment.",
+          "signals": [
+            "52 cross-stack PRs (frontend + backend)",
+            "32 schema/migration PRs"
+          ]
+        }
+      },
+      "strongestDimension": "productImpact",
+      "explanation": "Product contributor in frontend/src and products/user_interviews — 174 features shipped, 2 tracked issues resolved, 52 cross-stack PRs, 32 schema migrations; reviewed 137 PRs for 51 colleagues.",
+      "representativePRs": [
+        {
+          "title": "feat: pinning in TaxonomicFilter",
+          "url": "https://github.com/PostHog/posthog/pull/53340",
+          "reason": "Feature PR in frontend/__snapshots__"
+        },
+        {
+          "title": "feat(replay): add backend logs minifilter to session inspector",
+          "url": "https://github.com/PostHog/posthog/pull/55522",
+          "reason": "Feature PR in frontend/__snapshots__"
+        },
+        {
+          "title": "fix(llma): rename skill_identifier back to skill_name on skills endpoints",
+          "url": "https://github.com/PostHog/posthog/pull/60054",
+          "reason": "Bug fix in products/llm_analytics"
+        }
+      ],
+      "confidence": "high",
+      "confidenceNote": "Based on 90 days of data."
+    },
+    {
+      "rank": 2,
+      "login": "sampennington",
+      "overallScore": 80,
+      "breakdown": {
+        "productImpact": {
+          "score": 82,
+          "rawScore": 537.5,
+          "formula": "Feature PRs × 3 + linked-issue PRs × 2 + core-product PRs × 1. Title/label signals for all PRs; file-area signals for enriched PRs.",
+          "signals": [
+            "106 feature/product PRs merged",
+            "6 PRs closed tracked GitHub issues",
+            "Primary areas: frontend/src, products/product_analytics, frontend/snapshots.yml"
+          ]
+        },
+        "orgLeverage": {
+          "score": 66,
+          "rawScore": 183.11596199025533,
+          "formula": "Formal reviews × 2 × complexity weight (0.5–1.0 by PR size) + log₂(distinct colleagues + 1) × 2. Sourced from reviewed-by: queries, covering all active engineers.",
+          "signals": [
+            "125 substantive reviews for 28 colleagues"
+          ]
+        },
+        "reliabilityQuality": {
+          "score": 96,
+          "rawScore": 513.5,
+          "formula": "Bug fixes × 2 + tests × 1.5 + perf × 1.5 + refactors × 1 + migrations × 1 + CI × 0.5. A PR can score multiple categories.",
+          "signals": [
+            "97 bug fixes merged",
+            "160 PRs added or improved tests",
+            "9 schema/migration PRs"
+          ]
+        },
+        "ownershipComplexity": {
+          "score": 82,
+          "rawScore": 158.26666666666625,
+          "formula": "Cross-stack PRs × 2 + migration/schema × 1.5 + infra × 1 + file-breadth (0–1, capped at 30). Cross-stack detection requires file enrichment.",
+          "signals": [
+            "39 cross-stack PRs (frontend + backend)",
+            "9 schema/migration PRs"
+          ]
+        }
+      },
+      "strongestDimension": "reliabilityQuality",
+      "explanation": "Quality-focused contributor in frontend/src and products/product_analytics — 106 features shipped, 6 tracked issues resolved, 39 cross-stack PRs, 9 schema migrations; reviewed 125 PRs for 28 colleagues, 97 bug fixes.",
+      "representativePRs": [
+        {
+          "title": "feat(hogql): tag user-supplied hogql in queries + prometheus label",
+          "url": "https://github.com/PostHog/posthog/pull/60214",
+          "reason": "Feature PR closing issue #58715 in posthog/clickhouse"
+        },
+        {
+          "title": "feat(insights): Adds breakdown funnels by cohort",
+          "url": "https://github.com/PostHog/posthog/pull/50948",
+          "reason": "Feature PR closing issue #5565 in frontend/src"
+        },
+        {
+          "title": "fix(insights): coerce aggregation_target type in multi-source funnels",
+          "url": "https://github.com/PostHog/posthog/pull/58711",
+          "reason": "Bug fix in posthog/hogql_queries"
+        }
+      ],
+      "confidence": "high",
+      "confidenceNote": "Based on 90 days of data."
+    },
+    {
+      "rank": 3,
+      "login": "Gilbert09",
+      "overallScore": 74,
+      "breakdown": {
+        "productImpact": {
+          "score": 81,
+          "rawScore": 525.5,
+          "formula": "Feature PRs × 3 + linked-issue PRs × 2 + core-product PRs × 1. Title/label signals for all PRs; file-area signals for enriched PRs.",
+          "signals": [
+            "112 feature/product PRs merged",
+            "Primary areas: posthog/temporal, frontend/src, products/data_warehouse"
+          ]
+        },
+        "orgLeverage": {
+          "score": 74,
+          "rawScore": 236.60917770335544,
+          "formula": "Formal reviews × 2 × complexity weight (0.5–1.0 by PR size) + log₂(distinct colleagues + 1) × 2. Sourced from reviewed-by: queries, covering all active engineers.",
+          "signals": [
+            "182 substantive reviews for 46 colleagues"
+          ]
+        },
+        "reliabilityQuality": {
+          "score": 65,
+          "rawScore": 233.5,
+          "formula": "Bug fixes × 2 + tests × 1.5 + perf × 1.5 + refactors × 1 + migrations × 1 + CI × 0.5. A PR can score multiple categories.",
+          "signals": [
+            "86 bug fixes merged",
+            "13 PRs added or improved tests",
+            "17 schema/migration PRs"
+          ]
+        },
+        "ownershipComplexity": {
+          "score": 67,
+          "rawScore": 106.73333333333316,
+          "formula": "Cross-stack PRs × 2 + migration/schema × 1.5 + infra × 1 + file-breadth (0–1, capped at 30). Cross-stack detection requires file enrichment.",
+          "signals": [
+            "16 cross-stack PRs (frontend + backend)",
+            "17 schema/migration PRs"
+          ]
+        }
+      },
+      "strongestDimension": "productImpact",
+      "explanation": "Product contributor in posthog/temporal and frontend/src — 112 features shipped, 16 cross-stack PRs, 17 schema migrations; reviewed 182 PRs for 46 colleagues.",
+      "representativePRs": [
+        {
+          "title": "feat(data-warehouse): scaffold missing warehouse import sources",
+          "url": "https://github.com/PostHog/posthog/pull/62475",
+          "reason": "Feature PR in frontend/public"
+        },
+        {
+          "title": "feat(data-warehouse): add tracked HTTP transport for warehouse sources",
+          "url": "https://github.com/PostHog/posthog/pull/56652",
+          "reason": "Feature PR in posthog/management"
+        },
+        {
+          "title": "fix(data-warehouse): surface actionable error when postgres int column type widens",
+          "url": "https://github.com/PostHog/posthog/pull/59384",
+          "reason": "Bug fix in posthog/temporal"
+        }
+      ],
+      "confidence": "high",
+      "confidenceNote": "Based on 90 days of data."
+    },
+    {
+      "rank": 4,
+      "login": "andrewm4894",
+      "overallScore": 68,
+      "breakdown": {
+        "productImpact": {
+          "score": 76,
+          "rawScore": 466.5,
+          "formula": "Feature PRs × 3 + linked-issue PRs × 2 + core-product PRs × 1. Title/label signals for all PRs; file-area signals for enriched PRs.",
+          "signals": [
+            "131 feature/product PRs merged",
+            "1 PR closed tracked GitHub issues",
+            "Primary areas: products/llm_analytics, products/signals, posthog/temporal"
+          ]
+        },
+        "orgLeverage": {
+          "score": 64,
+          "rawScore": 176.39580443772462,
+          "formula": "Formal reviews × 2 × complexity weight (0.5–1.0 by PR size) + log₂(distinct colleagues + 1) × 2. Sourced from reviewed-by: queries, covering all active engineers.",
+          "signals": [
+            "127 substantive reviews for 38 colleagues"
+          ]
+        },
+        "reliabilityQuality": {
+          "score": 55,
+          "rawScore": 169,
+          "formula": "Bug fixes × 2 + tests × 1.5 + perf × 1.5 + refactors × 1 + migrations × 1 + CI × 0.5. A PR can score multiple categories.",
+          "signals": [
+            "46 bug fixes merged",
+            "17 PRs added or improved tests",
+            "29 schema/migration PRs"
+          ]
+        },
+        "ownershipComplexity": {
+          "score": 78,
+          "rawScore": 145.46666666666647,
+          "formula": "Cross-stack PRs × 2 + migration/schema × 1.5 + infra × 1 + file-breadth (0–1, capped at 30). Cross-stack detection requires file enrichment.",
+          "signals": [
+            "26 cross-stack PRs (frontend + backend)",
+            "29 schema/migration PRs"
+          ]
+        }
+      },
+      "strongestDimension": "ownershipComplexity",
+      "explanation": "Cross-stack engineer spanning products/llm_analytics and products/signals — 131 features shipped, 1 tracked issue resolved, 29 schema migrations; reviewed 127 PRs for 38 colleagues.",
+      "representativePRs": [
+        {
+          "title": "feat(signals): headless scout backend (3/7)",
+          "url": "https://github.com/PostHog/posthog/pull/57757",
+          "reason": "Feature PR in posthog/api"
+        },
+        {
+          "title": "feat(signals): scout fleet + per-scout scheduling (5/7)",
+          "url": "https://github.com/PostHog/posthog/pull/57759",
+          "reason": "Feature PR in posthog/models"
+        },
+        {
+          "title": "fix(llma): normalize nested token objects instead of dropping AI events",
+          "url": "https://github.com/PostHog/posthog/pull/52891",
+          "reason": "Bug fix in nodejs/src"
+        }
+      ],
+      "confidence": "high",
+      "confidenceNote": "Based on 90 days of data."
+    },
+    {
+      "rank": 5,
+      "login": "webjunkie",
+      "overallScore": 66,
+      "breakdown": {
+        "productImpact": {
+          "score": 49,
+          "rawScore": 191.5,
+          "formula": "Feature PRs × 3 + linked-issue PRs × 2 + core-product PRs × 1. Title/label signals for all PRs; file-area signals for enriched PRs.",
+          "signals": [
+            "53 feature/product PRs merged",
+            "3 PRs closed tracked GitHub issues",
+            "Primary areas: products/visual_review, .github/workflows, ee/api"
+          ]
+        },
+        "orgLeverage": {
+          "score": 79,
+          "rawScore": 267.5948506839433,
+          "formula": "Formal reviews × 2 × complexity weight (0.5–1.0 by PR size) + log₂(distinct colleagues + 1) × 2. Sourced from reviewed-by: queries, covering all active engineers.",
+          "signals": [
+            "157 substantive reviews for 50 colleagues",
+            "Primary areas: products/visual_review, .github/workflows, ee/api"
+          ]
+        },
+        "reliabilityQuality": {
+          "score": 75,
+          "rawScore": 311,
+          "formula": "Bug fixes × 2 + tests × 1.5 + perf × 1.5 + refactors × 1 + migrations × 1 + CI × 0.5. A PR can score multiple categories.",
+          "signals": [
+            "87 bug fixes merged",
+            "24 PRs added or improved tests",
+            "23 schema/migration PRs"
+          ]
+        },
+        "ownershipComplexity": {
+          "score": 79,
+          "rawScore": 150.2,
+          "formula": "Cross-stack PRs × 2 + migration/schema × 1.5 + infra × 1 + file-breadth (0–1, capped at 30). Cross-stack detection requires file enrichment.",
+          "signals": [
+            "17 cross-stack PRs (frontend + backend)",
+            "23 schema/migration PRs"
+          ]
+        }
+      },
+      "strongestDimension": "orgLeverage",
+      "explanation": "Broadest review reach — reviewed 157 PRs for 50 colleagues — 53 features shipped, 3 tracked issues resolved, 17 cross-stack PRs, 23 schema migrations.",
+      "representativePRs": [
+        {
+          "title": "feat(visual-review): add Django admin for the six models",
+          "url": "https://github.com/PostHog/posthog/pull/58804",
+          "reason": "Feature PR closing issue #57879 in products/visual_review"
+        },
+        {
+          "title": "feat(visual-review): switch to VR as the visual regression gate",
+          "url": "https://github.com/PostHog/posthog/pull/54416",
+          "reason": "Feature PR in .github/scripts"
+        },
+        {
+          "title": "fix(docker): widen libssl pin to 3.0.*, fix hobby installer apt-key",
+          "url": "https://github.com/PostHog/posthog/pull/62652",
+          "reason": "Bug fix in bin/hobby-installer"
+        }
+      ],
+      "confidence": "high",
+      "confidenceNote": "Based on 90 days of data."
+    },
+    {
+      "rank": 6,
+      "login": "MattPua",
+      "overallScore": 63,
+      "breakdown": {
+        "productImpact": {
+          "score": 68,
+          "rawScore": 377,
+          "formula": "Feature PRs × 3 + linked-issue PRs × 2 + core-product PRs × 1. Title/label signals for all PRs; file-area signals for enriched PRs.",
+          "signals": [
+            "86 feature/product PRs merged",
+            "8 PRs closed tracked GitHub issues",
+            "Primary areas: frontend/src, products/dashboards, .agents/skills"
+          ]
+        },
+        "orgLeverage": {
+          "score": 57,
+          "rawScore": 136.58339262077376,
+          "formula": "Formal reviews × 2 × complexity weight (0.5–1.0 by PR size) + log₂(distinct colleagues + 1) × 2. Sourced from reviewed-by: queries, covering all active engineers.",
+          "signals": [
+            "103 substantive reviews for 30 colleagues"
+          ]
+        },
+        "reliabilityQuality": {
+          "score": 59,
+          "rawScore": 192,
+          "formula": "Bug fixes × 2 + tests × 1.5 + perf × 1.5 + refactors × 1 + migrations × 1 + CI × 0.5. A PR can score multiple categories.",
+          "signals": [
+            "46 bug fixes merged",
+            "42 PRs added or improved tests",
+            "17 schema/migration PRs"
+          ]
+        },
+        "ownershipComplexity": {
+          "score": 65,
+          "rawScore": 100.99999999999993,
+          "formula": "Cross-stack PRs × 2 + migration/schema × 1.5 + infra × 1 + file-breadth (0–1, capped at 30). Cross-stack detection requires file enrichment.",
+          "signals": [
+            "16 cross-stack PRs (frontend + backend)",
+            "17 schema/migration PRs"
+          ]
+        }
+      },
+      "strongestDimension": "productImpact",
+      "explanation": "Product contributor in frontend/src and products/dashboards — 86 features shipped, 8 tracked issues resolved, 16 cross-stack PRs, 17 schema migrations; reviewed 103 PRs for 30 colleagues.",
+      "representativePRs": [
+        {
+          "title": "feat(alerts): quiet hours for insight alerts",
+          "url": "https://github.com/PostHog/posthog/pull/53264",
+          "reason": "Feature PR closing issue #28893 in frontend/src"
+        },
+        {
+          "title": "feat(dashboards): remove includeLocation for Fuse searching for dashboards",
+          "url": "https://github.com/PostHog/posthog/pull/51669",
+          "reason": "Feature PR closing issue #48395 in frontend/src"
+        },
+        {
+          "title": "fix(dashboard-filters): Fixes a overflow issue for filters when many filters are enabled",
+          "url": "https://github.com/PostHog/posthog/pull/52178",
+          "reason": "Bug fix in frontend/__snapshots__"
+        }
+      ],
+      "confidence": "high",
+      "confidenceNote": "Based on 90 days of data."
+    },
+    {
+      "rank": 7,
+      "login": "rnegron",
+      "overallScore": 61,
+      "breakdown": {
+        "productImpact": {
+          "score": 44,
+          "rawScore": 160,
+          "formula": "Feature PRs × 3 + linked-issue PRs × 2 + core-product PRs × 1. Title/label signals for all PRs; file-area signals for enriched PRs.",
+          "signals": [
+            "48 feature/product PRs merged",
+            "Primary areas: .github/workflows, tools/hogli-commands, common/hogli"
+          ]
+        },
+        "orgLeverage": {
+          "score": 85,
+          "rawScore": 305.2938632372747,
+          "formula": "Formal reviews × 2 × complexity weight (0.5–1.0 by PR size) + log₂(distinct colleagues + 1) × 2. Sourced from reviewed-by: queries, covering all active engineers.",
+          "signals": [
+            "217 substantive reviews for 43 colleagues"
+          ]
+        },
+        "reliabilityQuality": {
+          "score": 66,
+          "rawScore": 240,
+          "formula": "Bug fixes × 2 + tests × 1.5 + perf × 1.5 + refactors × 1 + migrations × 1 + CI × 0.5. A PR can score multiple categories.",
+          "signals": [
+            "60 bug fixes merged",
+            "29 PRs added or improved tests",
+            "8 schema/migration PRs"
+          ]
+        },
+        "ownershipComplexity": {
+          "score": 49,
+          "rawScore": 56.40000000000001,
+          "formula": "Cross-stack PRs × 2 + migration/schema × 1.5 + infra × 1 + file-breadth (0–1, capped at 30). Cross-stack detection requires file enrichment.",
+          "signals": [
+            "3 cross-stack PRs (frontend + backend)",
+            "8 schema/migration PRs"
+          ]
+        }
+      },
+      "strongestDimension": "orgLeverage",
+      "explanation": "Broadest review reach — reviewed 217 PRs for 43 colleagues — 48 features shipped, 3 cross-stack PRs, 8 schema migrations.",
+      "representativePRs": [
+        {
+          "title": "feat: scaffold engineering_analytics product files",
+          "url": "https://github.com/PostHog/posthog/pull/58888",
+          "reason": "Feature PR in posthog/settings"
+        },
+        {
+          "title": "feat(engineering_analytics): private read layer + typed endpoints",
+          "url": "https://github.com/PostHog/posthog/pull/60317",
+          "reason": "Feature PR in posthog/scopes.py"
+        },
+        {
+          "title": "fix(ci): replace run_id with github.ref in concurrency groups",
+          "url": "https://github.com/PostHog/posthog/pull/56762",
+          "reason": "Bug fix in .github/scripts"
+        }
+      ],
+      "confidence": "high",
+      "confidenceNote": "Based on 90 days of data."
+    },
+    {
+      "rank": 8,
+      "login": "skoob13",
+      "overallScore": 55,
+      "breakdown": {
+        "productImpact": {
+          "score": 48,
+          "rawScore": 186,
+          "formula": "Feature PRs × 3 + linked-issue PRs × 2 + core-product PRs × 1. Title/label signals for all PRs; file-area signals for enriched PRs.",
+          "signals": [
+            "61 feature/product PRs merged",
+            "Primary areas: ee/hogai, services/mcp, frontend/src"
+          ]
+        },
+        "orgLeverage": {
+          "score": 74,
+          "rawScore": 232.59390673125793,
+          "formula": "Formal reviews × 2 × complexity weight (0.5–1.0 by PR size) + log₂(distinct colleagues + 1) × 2. Sourced from reviewed-by: queries, covering all active engineers.",
+          "signals": [
+            "167 substantive reviews for 36 colleagues"
+          ]
+        },
+        "reliabilityQuality": {
+          "score": 51,
+          "rawScore": 145,
+          "formula": "Bug fixes × 2 + tests × 1.5 + perf × 1.5 + refactors × 1 + migrations × 1 + CI × 0.5. A PR can score multiple categories.",
+          "signals": [
+            "52 bug fixes merged",
+            "5 PRs added or improved tests",
+            "11 schema/migration PRs"
+          ]
+        },
+        "ownershipComplexity": {
+          "score": 31,
+          "rawScore": 22.766666666666666,
+          "formula": "Cross-stack PRs × 2 + migration/schema × 1.5 + infra × 1 + file-breadth (0–1, capped at 30). Cross-stack detection requires file enrichment.",
+          "signals": [
+            "1 cross-stack PR (frontend + backend)",
+            "11 schema/migration PRs"
+          ]
+        }
+      },
+      "strongestDimension": "orgLeverage",
+      "explanation": "Broadest review reach — reviewed 167 PRs for 36 colleagues — 61 features shipped, 1 cross-stack PR, 11 schema migrations.",
+      "representativePRs": [
+        {
+          "title": "feat(mcp): add render_ui umbrella tool for cli mode",
+          "url": "https://github.com/PostHog/posthog/pull/61881",
+          "reason": "Feature PR in ee/hogai"
+        },
+        {
+          "title": "feat(posthog-ai): backend sandbox foundations bundle",
+          "url": "https://github.com/PostHog/posthog/pull/60884",
+          "reason": "Feature PR in ee/api"
+        },
+        {
+          "title": "fix(mcp): add generate-app-url tool so links aren't hand-built",
+          "url": "https://github.com/PostHog/posthog/pull/61814",
+          "reason": "Bug fix in ee/hogai"
+        }
+      ],
+      "confidence": "high",
+      "confidenceNote": "Based on 90 days of data."
+    },
+    {
+      "rank": 9,
+      "login": "rafaeelaudibert",
+      "overallScore": 53,
+      "breakdown": {
+        "productImpact": {
+          "score": 46,
+          "rawScore": 171.5,
+          "formula": "Feature PRs × 3 + linked-issue PRs × 2 + core-product PRs × 1. Title/label signals for all PRs; file-area signals for enriched PRs.",
+          "signals": [
+            "53 feature/product PRs merged",
+            "Primary areas: frontend/src, posthog/api, products/signals"
+          ]
+        },
+        "orgLeverage": {
+          "score": 83,
+          "rawScore": 294.13370619265953,
+          "formula": "Formal reviews × 2 × complexity weight (0.5–1.0 by PR size) + log₂(distinct colleagues + 1) × 2. Sourced from reviewed-by: queries, covering all active engineers.",
+          "signals": [
+            "192 substantive reviews for 44 colleagues"
+          ]
+        },
+        "reliabilityQuality": {
+          "score": 40,
+          "rawScore": 89,
+          "formula": "Bug fixes × 2 + tests × 1.5 + perf × 1.5 + refactors × 1 + migrations × 1 + CI × 0.5. A PR can score multiple categories.",
+          "signals": [
+            "30 bug fixes merged",
+            "1 PR added or improved tests",
+            "2 schema/migration PRs"
+          ]
+        },
+        "ownershipComplexity": {
+          "score": 21,
+          "rawScore": 10.3,
+          "formula": "Cross-stack PRs × 2 + migration/schema × 1.5 + infra × 1 + file-breadth (0–1, capped at 30). Cross-stack detection requires file enrichment.",
+          "signals": [
+            "2 cross-stack PRs (frontend + backend)",
+            "2 schema/migration PRs"
+          ]
+        }
+      },
+      "strongestDimension": "orgLeverage",
+      "explanation": "Broadest review reach — reviewed 192 PRs for 44 colleagues — 53 features shipped, 2 cross-stack PRs, 2 schema migrations.",
+      "representativePRs": [
+        {
+          "title": "feat(mcp): expose all health checks as general MCP tools",
+          "url": "https://github.com/PostHog/posthog/pull/61960",
+          "reason": "Feature PR in posthog/api"
+        },
+        {
+          "title": "feat(signals): thread optional remediation field through the pipeline",
+          "url": "https://github.com/PostHog/posthog/pull/61954",
+          "reason": "Feature PR in posthog/schema.py"
+        },
+        {
+          "title": "fix(cli): bump cargo-dist to 0.32.0 to refresh npm installer deps",
+          "url": "https://github.com/PostHog/posthog/pull/59718",
+          "reason": "Bug fix in codebase"
+        }
+      ],
+      "confidence": "high",
+      "confidenceNote": "Based on 90 days of data."
+    },
+    {
+      "rank": 10,
+      "login": "lricoy",
+      "overallScore": 50,
+      "breakdown": {
+        "productImpact": {
+          "score": 49,
+          "rawScore": 193,
+          "formula": "Feature PRs × 3 + linked-issue PRs × 2 + core-product PRs × 1. Title/label signals for all PRs; file-area signals for enriched PRs.",
+          "signals": [
+            "62 feature/product PRs merged",
+            "Primary areas: products/web_analytics, frontend/src, posthog/clickhouse"
+          ]
+        },
+        "orgLeverage": {
+          "score": 67,
+          "rawScore": 189.19390673125793,
+          "formula": "Formal reviews × 2 × complexity weight (0.5–1.0 by PR size) + log₂(distinct colleagues + 1) × 2. Sourced from reviewed-by: queries, covering all active engineers.",
+          "signals": [
+            "140 substantive reviews for 36 colleagues"
+          ]
+        },
+        "reliabilityQuality": {
+          "score": 45,
+          "rawScore": 112.5,
+          "formula": "Bug fixes × 2 + tests × 1.5 + perf × 1.5 + refactors × 1 + migrations × 1 + CI × 0.5. A PR can score multiple categories.",
+          "signals": [
+            "42 bug fixes merged",
+            "2 PRs added or improved tests",
+            "3 schema/migration PRs"
+          ]
+        },
+        "ownershipComplexity": {
+          "score": 17,
+          "rawScore": 6.999999999999999,
+          "formula": "Cross-stack PRs × 2 + migration/schema × 1.5 + infra × 1 + file-breadth (0–1, capped at 30). Cross-stack detection requires file enrichment.",
+          "signals": [
+            "3 schema/migration PRs"
+          ]
+        }
+      },
+      "strongestDimension": "orgLeverage",
+      "explanation": "Broadest review reach — reviewed 140 PRs for 36 colleagues — 62 features shipped, 3 schema migrations.",
+      "representativePRs": [
+        {
+          "title": "feat(data-warehouse): add Google Search Console source",
+          "url": "https://github.com/PostHog/posthog/pull/57550",
+          "reason": "Feature PR in frontend/src"
+        },
+        {
+          "title": "feat(web-analytics): add dimensional precomputed tables",
+          "url": "https://github.com/PostHog/posthog/pull/60558",
+          "reason": "Feature PR in posthog/clickhouse"
+        },
+        {
+          "title": "fix(web-analytics): gate lazy precompute on a team-id setting",
+          "url": "https://github.com/PostHog/posthog/pull/61942",
+          "reason": "Bug fix in posthog/settings"
+        }
+      ],
+      "confidence": "high",
+      "confidenceNote": "Based on 90 days of data."
+    }
+  ]
+}

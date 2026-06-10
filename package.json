@@ -2,11 +2,16 @@
   "name": "posthog-impact-dashboard",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "collect": "node --env-file=.env.local scripts/collect-prs.ts",
+    "aggregate": "node --env-file=.env.local scripts/aggregate.ts",
+    "score": "node --env-file=.env.local scripts/score-impact.ts",
+    "data": "node --env-file=.env.local scripts/collect-prs.ts && node --env-file=.env.local scripts/score-impact.ts"
   },
   "dependencies": {
     "next": "16.2.9",
